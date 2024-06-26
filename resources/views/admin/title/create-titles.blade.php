@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>AdminUX-PRO | Admin Dashboard HTML Template</title>
+    <title>Assessment Task</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Worlds Best Admin UX Dashbaoard PRO version for bootstrap template, Select, Calandar, Report, Charts, Tables etc." name="description" />
@@ -379,32 +379,39 @@
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 mx-auto">
-                                    <div class="row">
+                                    <div class="row ">
                                         <div class="col-lg-12 col-md-12 text-center">
-                                            <h1 class="mt-4">Edit Title</h1>
+                                        
+                                            <h1 class="mt-4">Add Title</h1>
+                                          
                                         </div>
                                     </div>
                                     <br>
-                                    <form action="{{ route('titles.update', $title->id) }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('title.store') }}" method="POST" enctype="multipart/form-data">
                                         @csrf
-                                        @method('PUT')
-                        
+
                                         <div class="form-group row mt-4">
                                             <div class="col-lg-6 col-md-6">
                                                 <label>Title</label>
-                                                <input type="text" class="form-control" id="title" name="title" value="{{ old('title', $title->title) }}">
+                                    
+                                                <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
                                             </div>
+                                     
                                         </div>
-                        
+                            
+
                                         <div class="card-footer">
-                                            <a href="{{ route('titles.index') }}" class="btn btn-outline-primary">Cancel</a>
-                                            <button type="submit" class="btn btn-primary float-right">Done</button>
+                                    
+                                        
+                                            <button type="submit" class="btn btn-primary float-right">Submit</button>
                                         </div>
+
                                     </form>
+                                 
+                
                                 </div>
                             </div>
                         </div>
-                        
                    
                     </div>
                 </div>

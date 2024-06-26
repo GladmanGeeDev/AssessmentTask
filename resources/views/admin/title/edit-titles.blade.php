@@ -385,31 +385,30 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <form action="{{ route('titles.update', $title->id) }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('admin.title.update', $title->id) }}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         @method('PUT')
-                        
+        
                                         <div class="form-group row mt-4">
                                             <div class="col-lg-6 col-md-6">
                                                 <label>Title</label>
-                                                <input type="text" class="form-control" id="title" name="title" value="{{ old('title', $title->title) }}">
+                                                <input type="text" name="title" class="form-control" value="{{ old('title', $title->title) }}" required>
                                             </div>
                                         </div>
-                        
+        
                                         <div class="card-footer">
-                                            <a href="{{ route('titles.index') }}" class="btn btn-outline-primary">Cancel</a>
-                                            <button type="submit" class="btn btn-primary float-right">Done</button>
+                                            <a href="{{ route('title.data') }}" class="btn btn-outline-primary">Cancel</a>
+                                            <button type="submit" class="btn btn-primary float-right">DONE</button>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        
-                   
                     </div>
                 </div>
             </div>
         </div>
+        
         <!-- Main container ends -->
 
     </div>

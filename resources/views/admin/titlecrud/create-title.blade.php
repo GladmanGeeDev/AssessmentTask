@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('head')
+<!-- Head tag -->
 
 <head>
     <meta charset="utf-8" />
@@ -35,11 +36,8 @@
 
 @endsection
 
-<!-- Head tag ends -->
-
-<!-- Body -->
-
 @section('content')
+        
 
 <div class="wrapper">
     <div class="content shadow-sm">
@@ -382,50 +380,25 @@
                                     <div class="row ">
                                         <div class="col-lg-12 col-md-12 text-center">
                                         
-                                            <h1 class="mt-4">Add Property</h1>
+                                            <h1 class="mt-4">Add Title</h1>
                                           
                                         </div>
                                     </div>
                                     <br>
-                                    <form action="{{ route('store') }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('titles.store') }}" method="POST" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="form-group row mt-4">
                                             <div class="col-lg-6 col-md-6">
-                                                <label>Property Name</label>
+                                                <label>Title</label>
                                     
-                                                <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
+                                                <input type="text" class="form-control" id="title" name="title" value="{{ old('name') }}">
                                             </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <label>Location</label>
-                                                <input type="text" class="form-control" id="location" name="location" value="{{ old('location') }}">
-                                            </div>
+                                         
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <label>Price</label>
-                                                <input type="text" class="form-control" id="price" name="price" value="{{ old('price') }}">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <label>Description</label>
-                                                <input type="text" class="form-control" id="description" name="description" value="{{ old('description') }}">
-                                            </div>
-                                        </div>
-    
-                                        <div class="form-group row">
-                                            <div class="col-md-12">
-                                                <label>Attachments</label>
-                                                <br>
-                                                <div class="custom-dropzone text-center align-items-center dz-clickable" id="my-dropzone">
-                                                    
-                                                    <input type="file" class="form-control" id="image" name="image">
-                                                </div>
-    
-                                            </div>
-                                        </div>
+                        
 
                                         <div class="card-footer">
-                                    
                                         
                                             <button type="submit" class="btn btn-primary float-right">Submit</button>
                                         </div>
@@ -469,50 +442,4 @@
 
 </div>
 
-
-@endsection
-
-@section('footerscript')
-    <!-- Global js mandatory -->
-    <script src="../assets/js/jquery-3.3.1.min.js"></script>
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Global js ends -->
-
-    <!-- Vendor or 3rd party js -->
-
-    <!-- date range picker -->
-    <script src="../assets/vendor/daterangepicker-master/moment.min.js"></script>
-    <script src="../assets/vendor/daterangepicker-master/daterangepicker.js"></script>
-    <!-- Footable jquery file -->
-    <script src="../assets/vendor/footable-bootstrap/js/footable.min.js"></script>
-
-    <!-- Vendor or 3rd party js ends -->
-
-    <!-- Customized template js mandatory -->
-    <script src="../assets/js/main.js"></script>
-    <!-- Customized template js ends -->
-
-    <!-- theme picker -->
-    <script src="../assets/js/style-picker.js"></script>
-    <!-- theme picker ends -->
-
-    <!-- Customized page level js -->
-    <script>
-        'user strict'
-        $(document).ready(function() {
-
-            /* footable  */
-            $(".footable").footable({
-                "paging": {
-                    "enabled": true,
-                    "position": "center"
-                }
-            });
-
-
-        });
-
-    </script>
-    <!-- Customized page level js ends -->
 @endsection

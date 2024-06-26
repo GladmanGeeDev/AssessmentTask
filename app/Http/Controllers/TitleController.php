@@ -9,19 +9,19 @@ class TitleController extends Controller
 {
     public function index()
     {
+      
         $titles = Title::all();
-        return view('admin.titles.index', compact('titles'));
+
+        return view("admin.title.title-datatable", compact('titles'));
     }
 
-    public function homeIndex()
-    {
-        $titles = Title::paginate(10);
-        return view('index', compact('titles'));
-    }
+  
 
     public function create()
     {
-        return view('admin.titlecrud.create-title');
+        $titles = Title::all();
+
+        return view("admin.title.create-titles", compact('titles'));
     }
 
     public function store(Request $request)
@@ -34,33 +34,46 @@ class TitleController extends Controller
             'title' => $request->input('title'),
         ]);
 
-        return redirect()->route('titles.index')->with('success', 'Title added successfully!');
+        return redirect()->route('title.data')->with('success', 'Title added successfully!');
     }
 
-    public function edit($id)
+
+    public function edit(Title $title)
     {
-        $title = Title::findOrFail($id);
-        return view('admin.titlecrud.edit-title', compact('title'));
+        return view('admin.title.edit-titles', compact('title'));
     }
 
-    public function update(Request $request, $id)
-    {
-        $request->validate([
-            'title' => 'required|string|max:255',
-        ]);
+    // public function update(Request $request, $id)
+    // {
+    //     $request->validate([
+    //         'title' => 'required|string|max:255',
+    //     ]);
 
-        $title = Title::findOrFail($id);
-        $title->title = $request->input('title');
-        $title->save();
+    //     $title = Title::findOrFail($id);
+    //     $title->title = $request->input('title');
+    //     $title->save();
 
-        return redirect()->route('titles.index')->with('success', 'Title updated successfully!');
-    }
+    //     return redirect()->route('title.data')->with('success', 'Title updated successfully!');
+    // }
+
+    public function update(Request $request, Title $title)
+{
+    $validatedData = $request->validate([
+        'title' => 'required|string|max:255',
+    ]);
+
+    $title->title = $validatedData['title'];
+
+    $title->save();
+
+    return redirect()->route('admin.title.title.data')->with('success', 'Title updated successfully.');
+}
 
     public function destroy($id)
     {
         $title = Title::findOrFail($id);
         $title->delete();
 
-        return redirect()->route('titles.index')->with('success', 'Title deleted successfully!');
+        return redirect()->route('title.data')->with('success', 'Title deleted successfully!');
     }
 }
