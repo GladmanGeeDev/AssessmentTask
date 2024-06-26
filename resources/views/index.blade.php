@@ -2,41 +2,50 @@
 <html lang="en">
 
 <head>
-  <!--====== Required meta tags ======-->
+
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!--====== Title ======-->
-  <title>Business | Bootstrap 5 Business Template</title>
 
-  	<!-- Bootstrap -->
+  <title>Assessment task</title>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+
+ 
 	<link rel="stylesheet" href="assets2/plugins/bootstrap/css/bootstrap.min.css">
-	<!-- Themify -->
+
 	<link rel="stylesheet" href="assets2/plugins/themify/css/themify-icons.css">
 	<link rel="stylesheet" href="assets2/plugins/slick-carousel/slick-theme.css">
 	<link rel="stylesheet" href="assets2/plugins/slick-carousel/slick.css">
-	<!-- Slick Carousel -->
+
 	<link rel="stylesheet" href="assets2/plugins/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets2/plugins/owl-carousel/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets2/plugins/magnific-popup/magnific-popup.css">
-	<!-- manin stylesheet -->
+
 	<link rel="stylesheet" href="assets2/css/style.css">
 
-  <!--====== Favicon Icon ======-->
+
   <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/svg" />
 
-  <!--====== Bootstrap css ======-->
+
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-  <!--====== Line Icons css ======-->
+
   <link rel="stylesheet" href="assets/css/lineicons.css" />
 
-  <!--====== Tiny Slider css ======-->
+
   <link rel="stylesheet" href="assets/css/tiny-slider.css" />
 
-  <!--====== gLightBox css ======-->
+
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
   <link rel="stylesheet" href="style.css" />
@@ -76,12 +85,12 @@
             </div>
 
           </nav>
-          <!-- navbar -->
+  
         </div>
       </div>
-      <!-- row -->
+   
     </div>
-    <!-- container -->
+
   </section>
 
 
@@ -114,27 +123,28 @@
     <div class="container-fluid">
         <div class="row no-gutters">
             <div class="col-lg-12 col-sm-12 col-md-12 slider-wrap">
-              @foreach ($properties as $property)
-                <div class="slider-item">
-                    <div class="slider-item-content">
-                        <div class="post-thumb mb-4">
-                            <a href="blog-single.html">
-                              <img src="{{ $property->image }}" alt="" class="img-fluid">
-                            </a>
-                        </div>
+                @foreach ($properties as $property)
+                    <div class="slider-item">
+                        <div class="slider-item-content">
+                            <div class="post-thumb mb-4">
+                                <a href="blog-single.html">
+                                    <img src="{{ $property->image }}" alt="" class="img-fluid" style="width: 640px; height: 480px; object-fit: cover;">
+                                </a>
+                            </div>
 
-                        <div class="slider-post-content">
-                            <span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">{{ $property->name }}</span>
-                            <h3 class="post-title mt-1"><a href="blog-single.html">{{ $property->location }}</a></h3>
-                            <span class="text-muted text-capitalize">{{ $property->price }}</span>
+                            <div class="slider-post-content">
+                                <span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">{{ $property->name }}</span>
+                                <h3 class="post-title mt-1"><a href="blog-single.html">{{ $property->location }}</a></h3>
+                                <span class="text-muted text-capitalize">{{ $property->price }}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
     </div>
 </section>
+
 
 
   <section id="services" class="services-area services-eight">
@@ -282,16 +292,14 @@
               <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/3.jpg" alt="Blog" /></a>
               <div class="meta-details">
                       <img src="assetshome/images/header/hero-image.jpg" alt="#" />
-                <span>BY Gladman Gee</span>
+                <span>{{ \App\Models\Title::where('id', 3)->value('title') }}</span>
               </div>
             </div>
             <div class="content-body">
               <h4 class="title">
                 <a href="javascript:void(0)"> ta </a>
               </h4>
-              <p>
-                Random Text
-              </p>
+             
             </div>
           </div>
 
@@ -403,28 +411,71 @@
   </footer>
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 
 	<script src="assets2/plugins/jquery/jquery.js"></script>
-	<!-- Bootstraassets2/p jQuery -->
+
 	<script src="assets2/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets2/plugins/bootstrap/js/popper.min.js"></script>
-	<!-- Owl caeousel -->
+
 	<script src="assets2/plugins/owl-carousel/owl.carousel.min.js"></script>
 	<script src="assets2/plugins/slick-carousel/slick.min.js"></script>
 	<script src="assets2/plugins/magnific-popup/magnific-popup.js"></script>
-	<!-- Instagram Feed Js -->
+
 	<script src="assets2/plugins/instafeed-js/instafeed.min.js"></script>
-	<!-- Google Map -->
+
 	<script src="assets2/https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
 	<script src="assets2/plugins/google-map/gmap.js"></script>
-	<!-- main js -->
+
 	<script src="assets2/js/custom.js"></script>
 
-  <!--====== js ======-->
+
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tiny-slider.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider-wrap').slick({
+            slidesToShow: 4,        // Number of slides to show
+            slidesToScroll: 1,      // Number of slides to scroll
+            autoplay: true,         // Enable auto play
+            autoplaySpeed: 3000,    // Auto play speed (3 seconds)
+            infinite: true,         // Infinite looping
+            arrows: true,           // Show navigation arrows
+            dots: true,             // Show navigation dots
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
 
   <script>
 

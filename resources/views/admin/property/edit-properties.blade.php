@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Assessment Task @ PropertyBook</title>
+    <title>AdminUX-PRO | Admin Dashboard HTML Template</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Worlds Best Admin UX Dashbaoard PRO version for bootstrap template, Select, Calandar, Report, Charts, Tables etc." name="description" />
@@ -376,7 +376,7 @@
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-10 col-xl-8 mx-auto align-self-center">
                     <div class="card shadow-sm border-0 mb-4">
-                        <div class="card-body">
+                        {{-- <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 mx-auto">
                                     <div class="row">
@@ -401,6 +401,63 @@
                                             <button type="submit" class="btn btn-primary float-right">DONE</button>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+                        </div> --}}
+
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-md-12 text-center">
+                                        
+                                            <h1 class="mt-4">Edit Property</h1>
+                                          
+                                        </div>
+                                    </div>
+                                    <form action="{{ route('admin.update', $property->id) }}" method="POST" enctype="multipart/form-data">
+                                        @csrf
+                                        @method('PUT')
+                                    
+                                        <div class="form-group row mt-4">
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Property Name</label>
+                                                <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Location</label>
+                                                <input type="text" class="form-control" id="location" name="location" value="{{ old('location') }}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Price</label>
+                                                <input type="text" class="form-control" id="price" name="price" value="{{ old('price') }}">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Description</label>
+                                                <input type="text" class="form-control" id="description" name="description" value="{{ old('description') }}">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label>Attachments</label>
+                                                <br>
+                                                <div class="custom-dropzone text-center align-items-center dz-clickable" id="my-dropzone">
+                                                    <input type="file" class="form-control" id="image" name="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="card-footer">
+                                            <a href="{{ route('property.data') }}" class="btn btn-outline-primary">Cancel</a>
+                                            <button type="submit" class="btn btn-primary float-right">DONE</button>
+                                        </div>
+                                    </form>
+                                    
+                                 
+                
                                 </div>
                             </div>
                         </div>

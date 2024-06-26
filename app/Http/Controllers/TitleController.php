@@ -43,18 +43,7 @@ class TitleController extends Controller
         return view('admin.title.edit-titles', compact('title'));
     }
 
-    // public function update(Request $request, $id)
-    // {
-    //     $request->validate([
-    //         'title' => 'required|string|max:255',
-    //     ]);
-
-    //     $title = Title::findOrFail($id);
-    //     $title->title = $request->input('title');
-    //     $title->save();
-
-    //     return redirect()->route('title.data')->with('success', 'Title updated successfully!');
-    // }
+   
 
     public function update(Request $request, Title $title)
 {
