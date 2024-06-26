@@ -40,19 +40,20 @@ class AdminController extends Controller
             'location' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-
+    
         $property = new Property($request->all());
-
+    
         if ($request->hasFile('image')) {
             $imageName = time().'.'.$request->image->getClientOriginalExtension();
             $request->image->move(public_path('assets/images/'), $imageName);
-            $property->image = $imageName; // Store just the filename
+            $property->image = 'assets/images/' . $imageName; // Store the relative path
         }
-        
+    
         $property->save();
-
+    
         return redirect('admin/display-properties/')->with('success', 'Property created successfully.');
     }
+    
 
     public function displayProperties(){
 

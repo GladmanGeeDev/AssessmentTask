@@ -381,7 +381,9 @@
                         <div class="card text-center shadow-sm border-0 mb-4">
                             <div class="card-img-top">
                                 <div class="background">
-                                    <img src="{{ $property->image }}" alt="">
+                                @if($property->image)
+                                    <img src="{{ asset($property->image) }}" alt="{{ $property->name }}">
+                                @endif
                                 </div>
                             </div>
                             <div class="card-body">
