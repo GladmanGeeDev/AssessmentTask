@@ -85,49 +85,51 @@ class AdminController extends Controller
 
      public function edit(Property $property)
     {
-        
         return view('admin.property.edit-properties', compact('property'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id)
-    {
-        $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'required|string',
-            'price' => 'required|numeric',
-            'location' => 'required|string|max:255',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-        ]);
+    public function update(Request $request, Property $property)
+{
+    $validatedData = $request->validate([
+        'name' => 'required|string|max:255',
+        'description' => 'required|string',
+        'price' => 'required|numeric',
+        'location' => 'required|string|max:255',
+        'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+    ]);
 
-        $property = Property::find($id);
-        if (!$property) {
-            abort(404); // Or handle not found case as per your application's logic
-        }
+    $property->name = $validatedData['name'];
+    $property->description = $validatedData['description'];
+    $property->price = $validatedData['price'];
+    $property->location = $validatedData['location'];
 
-        $property->name = $request->name;
-        $property->description = $request->description;
-        $property->price = $request->price;
-        $property->location = $request->location;
-
-        if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('property_images', 'public');
-            $property->image = $imagePath;
-        }
-
-        $property->save();
-
-        return redirect()->route('properties.index')->with('success', 'Property updated successfully.');
+    if ($request->hasFile('image')) {
+        $imageName = time().'.'.$request->image->getClientOriginalExtension();
+        $request->image->move(public_path('assets/images/'), $imageName);
+        $property->image = $imageName;
     }
+
+    $property->save();
+
+    return redirect()->route('admin.display-properties')->with('success', 'Property updated successfully.');
+}
+
+
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id) {
-        DB::delete('delete from properties where id = ?',[$id]);
-        echo "Record deleted successfully.<br/>";
-        echo '<a href = "/delete-records">Click Here</a> to go back.';
-     }
+    public function destroy($id)
+    {
+        $property = Property::find($id);
+        if ($property) {
+            $property->delete();
+            return redirect()->route('admin.display-properties')->with('success', 'Property deleted successfully.');
+        } else {
+            return redirect()->route('admin.display-properties')->with('error', 'Property not found.');
+        }
+    }
 }

@@ -387,50 +387,45 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <form action="{{ route('edit') }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('admin.update', $property->id) }}" method="POST" enctype="multipart/form-data">
                                         @csrf
-
+                                        @method('PUT')
+                                    
                                         <div class="form-group row mt-4">
                                             <div class="col-lg-6 col-md-6">
                                                 <label>Property Name</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="name" class="form-control" value="{{ old('name', $property->name) }}" required>
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <label>Location</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="location" class="form-control" value="{{ old('location', $property->location) }}" required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-lg-6 col-md-6">
                                                 <label>Price</label>
-                                                <input type="email" class="form-control">
+                                                <input type="text" name="price" class="form-control" value="{{ old('price', $property->price) }}" required>
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <label>Description</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="description" class="form-control" value="{{ old('description', $property->description) }}" required>
                                             </div>
                                         </div>
-    
+                                    
                                         <div class="form-group row">
                                             <div class="col-md-12">
                                                 <label>Attachments</label>
                                                 <br>
-                                                <div class="custom-dropzone text-center align-items-center dz-clickable" id="my-dropzone">
-                                                    <div class="dz-default dz-message" data-dz-message="">
-                                                        <h3 class="mt-3"><i class="material-icons">cloud_download</i></h3>
-                                                        <p>click here to upload</p>
-                                                    </div>
-                                                </div>
-    
+                                                <input type="file" name="image" class="form-control">
                                             </div>
                                         </div>
-
+                                    
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-primary">Cancel</button>
-                                            <button class="btn btn-primary float-right">DONE</button>
+                                            <button type="button" class="btn btn-outline-primary">Cancel</button>
+                                            <button type="submit" class="btn btn-primary float-right">DONE</button>
                                         </div>
-
                                     </form>
+                                    
                                  
                 
                                 </div>

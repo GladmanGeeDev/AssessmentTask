@@ -25,7 +25,7 @@
     <h6 class="subtitle fs11">Property Management</h6>
     <ul class="nav flex-column">
         <li class="nav-item dropdown">
-            <div class="nav-item"><a class="nav-link" href="{{ route('display.properties') }}"><span>View Property **Images</span></a></div>
+            <div class="nav-item"><a class="nav-link" href="{{ route('admin.display-properties') }}"><span>View Property **Images</span></a></div>
             <div class="nav-item"><a class="nav-link" href="{{ route('property.data') }}"><span>Property Data Table</span></a></div>
             <div class="nav-item"><a class="nav-link" href="{{ route('titles.index') }}"><span>Titles</span></a></div>
             <div class="nav-item"><a class="nav-link" href="{{ url("compose-mail") }}"><span>Log out</span></a></div>

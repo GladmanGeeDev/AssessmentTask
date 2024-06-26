@@ -389,65 +389,42 @@
                                     <th>Property Name</th>
                                     <th data-breakpoints="xs sm">Price</th>
                                     <th data-breakpoints="xs sm md">Location</th>
-                               
                                     <th data-breakpoints="xs sm" class="text-right">Action</th>
-                                    {{-- <th data-breakpoints="xs">Status</th> --}}
-                                 
-                                
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($properties as $property)
                                 <tr>
                                     <td>
-                           
                                         <h6 class="d-inline-block vm">{{ $property->id }}</h6>
                                     </td>
                                     <td>
-                           
                                         <h6 class="d-inline-block vm">{{ $property->name }}</h6>
                                     </td>
                                     <td>
                                         <p>$ {{ $property->price }}</p>
                                     </td>
                                     <td>{{ $property->location }}</td>
-                             
                                     <td>
-                                        <a href="{{ route('edit') }}" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block; background-color: green; border: none; cursor: pointer;">
+                                        <a href="{{ route('admin.edit', $property->id) }}" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block; background-color: green; border: none; cursor: pointer;">
                                             Edit
                                         </a>
                                         
-                                        <a href="{{ route('edit') }}" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block; background-color: rgb(234, 11, 48); border: none; cursor: pointer;">
-                                            Delete
-                                        </a>
-                                    </td>
-                                    
-
-                        
-                                    
-                                    <td>
-                                        <ul class="list pl-4">
-                                            <li>Intel Core i5 Processor (6th Gen)</li>
-                                            <li>4 GB DDR3 RAM</li>
-                                            <li>64 bit Windows 10 Operating System</li>
-                                            <li>128 GB SSD</li>
-                                            <li>12.3 Inch Touchscreen Display</li>
-                                        </ul>
-                                    </td>
-                                    <td>Surface Pro 4, Surface Pen, Power Adapter, Quick Start Guide, Safety and Warranty Documents</td>
-                                    <td>1204 MS</td>
-                                    <td>CR5-00028</td>
-                                    <td class="text-right">
-                                        <button class="btn btn-success btn-sm">Add More</button>
+                                        <form action="{{ route('admin.destroy', $property->id) }}" method="POST" style="display: inline;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block; background-color: rgb(234, 11, 48); border: none; cursor: pointer;">
+                                                Delete
+                                            </button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach
-                               
-                              
                             </tbody>
                         </table>
                     </div>
                 </div>
+                
 
 
             </div>

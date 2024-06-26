@@ -17,7 +17,9 @@ Route::post('admin/login', [App\Http\Controllers\Auth\LoginController::class, 'l
 
 
 
-Route::get('admin/display-properties', [AdminController::class, 'displayProperties'])->name('display.properties');
+
+
+Route::get('/display-properties', [AdminController::class, 'displayProperties'])->name('admin.display-properties');
 
 Route::get('admin/property-data', [AdminController::class, 'propertyData'])->name('property.data');
 
@@ -27,7 +29,11 @@ Route::get('admin/create-properties', [AdminController::class, 'create'])->name(
 
 Route::post('admin/create-properties', [AdminController::class, 'store'])->name('store');
 
-Route::get('admin/edit-properties/', [AdminController::class, 'edit'])->name('edit');
+Route::get('/edit/{property}', [AdminController::class, 'edit'])->name('admin.edit');
+
+Route::delete('/destroy/{property}', [AdminController::class, 'destroy'])->name('admin.destroy');
+
+Route::put('/update/{property}', [AdminController::class, 'update'])->name('admin.update');
 
 
 
@@ -36,6 +42,8 @@ Route::get('/titles/create', [TitleController::class, 'create'])->name('titles.c
 Route::post('/titles', [TitleController::class, 'store'])->name('titles.store');
 Route::get('admin/titles/{id}/edit', [TitleController::class, 'edit'])->name('titles.edit');
 Route::post('admin/titles/{id}', [TitleController::class, 'update'])->name('titles.update');
+
+
 
 
 
