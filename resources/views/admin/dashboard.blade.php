@@ -434,7 +434,7 @@
                                 <div class="row">
                                     <div class="col py-2 pr-0">
                                         <p>Total Properties</p><br>
-                                        <h4 class="font-weight-light mb-0">COUNT HERE</h4>
+                                        <h4 class="font-weight-light mb-0">{{ $propertyCount }}</h4>
                                     </div>
                                 
                                 </div>
@@ -469,40 +469,37 @@
                                     <thead>
                                         <tr>
                                   
-                                            <th class="min-tablet">Order From</th>
-                                            <th class="min-desktop">Date</th>
-                                            <th class="">Status</th>
-                                            <th class="min-desktop">Order Receiver </th>
+                                            <th class="min-tablet">Property Name</th>
+                                            <th class="min-desktop">Price</th>
+                                
+                                            <th class="min-desktop">Location </th>
                                             <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach($latestProperties as $property)
+
                                         <tr>
-                                       
+                                           
                                             <td>
                                                 <div class="media">
                                                     <figure class="mb-0 avatar avatar-40 mr-2">
-                                                        <img src="admin/admin/assets/img/user3.png" alt="">
+                                                        @if($property->image)
+                                                            <img src="{{ asset($property->image) }}" class="card-img-top" alt="{{ $property->name }}">
+                                                        @endif
                                                     </figure>
                                                     <div class="media-body">
-                                                        <p class="mb-0 template-inverse">John Alexandar</p>
-                                                        <p class="text-template-primary-light">Sydney, Australia</p>
+                                                        <p class="mb-0 template-inverse"></p>
+                                                        <p class="text-template-primary-light">{{ $property->name }}</p>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>12-12-2019</td>
+                                            <td>$USD {{ $property->price }}</td>
+                                        
                                             <td>
-                                                <div class="btn-danger btn btn-sm">Accepted</div>
-                                            </td>
-                                            <td>
-                                                <div class="media">
-                                                    <figure class="mb-0 avatar avatar-40 mr-2">
-                                                        <img src="admin/admin/assets/img/user1.png" alt="">
-                                                    </figure>
-                                                    <div class="media-body">
-                                                        <p class="mb-0 template-inverse">Sonya Wilson</p>
-                                                        <p class="text-template-primary-light">Aquaguaard Manager</p>
-                                                    </div>
+                                                <div class="media-body">
+                                                    <p class="mb-0 template-inverse"></p>
+                                                    <p class="text-template-primary-light">{{ $property->location }}</p>
                                                 </div>
                                             </td>
                                             <td>
@@ -518,6 +515,9 @@
                                                 </div>
                                             </td>
                                         </tr>
+
+                                        @endforeach
+                                        
                               
                                     </tbody>
                                 </table>

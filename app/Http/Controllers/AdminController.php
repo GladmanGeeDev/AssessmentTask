@@ -11,12 +11,16 @@ class AdminController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        // Retrieve all properties with images
-        $properties = Property::select()->count();
+{
+    // Retrieve the total count of properties
+    $propertyCount = Property::count();
 
-        return view("admin.dashboard", compact('properties'));
-    }
+    // Retrieve the latest 4 properties
+    $latestProperties = Property::orderBy('created_at', 'desc')->take(4)->get();
+
+    return view('admin.dashboard', compact('propertyCount', 'latestProperties'));
+}
+
 
     /**
      * Show the form for creating a new resource.
