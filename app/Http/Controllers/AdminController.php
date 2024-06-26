@@ -51,7 +51,7 @@ class AdminController extends Controller
         
         $property->save();
 
-        return redirect('admin/display-properties/')->with('success', 'Property created successfully.');
+        return redirect('display-properties/')->with('success', 'Property created successfully.');
     }
 
     public function displayProperties(){
@@ -114,7 +114,7 @@ class AdminController extends Controller
 
     $property->save();
 
-    return redirect()->route('admin.display-properties')->with('success', 'Property updated successfully.');
+    return redirect()->route('admin.property.display-properties')->with('success', 'Property updated successfully.');
 }
 
 
