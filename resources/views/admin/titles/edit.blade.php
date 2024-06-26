@@ -379,36 +379,32 @@
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 mx-auto">
-                                    <div class="row ">
+                                    <div class="row">
                                         <div class="col-lg-12 col-md-12 text-center">
-                                        
-                                            <h1 class="mt-4">Edit Tile</h1>
-                                          
+                                            <h1 class="mt-4">Edit Title</h1>
                                         </div>
                                     </div>
                                     <br>
-                                    <form action="{{ route('title.edit') }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('titles.update', $title->id) }}" method="POST" enctype="multipart/form-data">
                                         @csrf
-
+                                        @method('PUT')
+                        
                                         <div class="form-group row mt-4">
                                             <div class="col-lg-6 col-md-6">
-                                                <label>Property Name</label>
-                                                <input type="text" class="form-control">
+                                                <label>Title</label>
+                                                <input type="text" class="form-control" id="title" name="title" value="{{ old('title', $title->title) }}">
                                             </div>
                                         </div>
                         
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-primary">Cancel</button>
-                                            <button class="btn btn-primary float-right">DONE</button>
+                                            <a href="{{ route('titles.index') }}" class="btn btn-outline-primary">Cancel</a>
+                                            <button type="submit" class="btn btn-primary float-right">Done</button>
                                         </div>
-
                                     </form>
-                                 
-                
                                 </div>
                             </div>
                         </div>
-                   
+                        
                     </div>
                 </div>
             </div>

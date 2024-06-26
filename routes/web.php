@@ -38,10 +38,12 @@ Route::put('/update/{property}', [AdminController::class, 'update'])->name('admi
 
 
 Route::get('admin/titles', [TitleController::class, 'index'])->name('titles.index');
-Route::get('/titles/create', [TitleController::class, 'create'])->name('titles.create');
-Route::post('/titles', [TitleController::class, 'store'])->name('titles.store');
+Route::get('admin/titles/create', [TitleController::class, 'create'])->name('titles.create');
+Route::post('admin/titles', [TitleController::class, 'store'])->name('titles.store');
 Route::get('admin/titles/{id}/edit', [TitleController::class, 'edit'])->name('titles.edit');
-Route::post('admin/titles/{id}', [TitleController::class, 'update'])->name('titles.update');
+Route::put('admin/titles/{id}', [TitleController::class, 'update'])->name('titles.update');
+Route::delete('admin/titles/{id}', [TitleController::class, 'destroy'])->name('titles.destroy');
+
 
 
 

@@ -371,73 +371,40 @@
             </div>
             <!-- Main container starts -->
             <div class="container main-container" id="main-container">
-
                 <a href="{{ route('titles.create') }}" class="btn btn-primary mb-3">Add New Title</a>
-
                 <div class="page-subtitle">All Titles</div>
                 <div class="card mb-4">
                     <div class="card-body">
                         <table class="table table-striped footable">
                             <thead>
                                 <tr>
-
                                     <th>Title (Text)</th>
-                                 
-                               
                                     <th data-breakpoints="xs sm" class="text-right">Action</th>
-                                    {{-- <th data-breakpoints="xs">Status</th> --}}
-                                 
-                                
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($titles as $title)
                                 <tr>
                                     <td>
-                           
                                         <h6 class="d-inline-block vm">{{ $title->title }}</h6>
                                     </td>
-
-                             
                                     <td>
-                                        <a href="{{ route('edit') }}" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block; background-color: green; border: none; cursor: pointer;">
-                                            Edit
-                                        </a>
-                                        
-                                        <a href="{{ route('edit') }}" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block; background-color: rgb(234, 11, 48); border: none; cursor: pointer;">
-                                            Delete
-                                        </a>
-                                    </td>
-                                    
-
-                        
-                                    
-                                    <td>
-                                        <ul class="list pl-4">
-                                            <li>Intel Core i5 Processor (6th Gen)</li>
-                                            <li>4 GB DDR3 RAM</li>
-                                            <li>64 bit Windows 10 Operating System</li>
-                                            <li>128 GB SSD</li>
-                                            <li>12.3 Inch Touchscreen Display</li>
-                                        </ul>
-                                    </td>
-                                    <td>Surface Pro 4, Surface Pen, Power Adapter, Quick Start Guide, Safety and Warranty Documents</td>
-                                    <td>1204 MS</td>
-                                    <td>CR5-00028</td>
-                                    <td class="text-right">
-                                        <button class="btn btn-success btn-sm">Add More</button>
+                                        <a href="{{ route('titles.edit', $title->id) }}" class="btn btn-success btn-sm" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block;">Edit</a>
+            
+                                        <form action="{{ route('titles.destroy', $title->id) }}" method="POST" style="display: inline;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger btn-sm" style="color: white; text-decoration: none; padding: 5px 10px; display: inline-block;">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach
-                               
-                              
                             </tbody>
                         </table>
                     </div>
                 </div>
-
-
             </div>
+            
             <!-- Main container ends -->
 
 
