@@ -21,11 +21,15 @@ Route::get('admin/display-properties', [AdminController::class, 'displayProperti
 
 Route::get('admin/property-data', [AdminController::class, 'propertyData'])->name('property.data');
 
+
+
 Route::get('admin/create-properties', [AdminController::class, 'create'])->name('create');
 
 Route::post('admin/create-properties', [AdminController::class, 'store'])->name('store');
 
-Route::get('admin/edit-properties', [AdminController::class, 'edit'])->name('edit');
+Route::get('admin/edit-properties/', [AdminController::class, 'edit'])->name('edit');
+
+
 
 Route::get('admin/titles', [TitleController::class, 'index'])->name('titles.index');
 Route::get('/titles/create', [TitleController::class, 'create'])->name('titles.create');

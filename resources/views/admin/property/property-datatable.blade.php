@@ -385,7 +385,7 @@
                         <table class="table table-striped footable">
                             <thead>
                                 <tr>
-
+                                    <th>Property ID</th>
                                     <th>Property Name</th>
                                     <th data-breakpoints="xs sm">Price</th>
                                     <th data-breakpoints="xs sm md">Location</th>
@@ -399,6 +399,10 @@
                             <tbody>
                                 @foreach ($properties as $property)
                                 <tr>
+                                    <td>
+                           
+                                        <h6 class="d-inline-block vm">{{ $property->id }}</h6>
+                                    </td>
                                     <td>
                            
                                         <h6 class="d-inline-block vm">{{ $property->name }}</h6>

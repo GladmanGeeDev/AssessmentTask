@@ -81,17 +81,45 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit()
+    
+
+     public function edit(Property $property)
     {
-        return view("admin.property.edit-properties");
+        
+        return view('admin.property.edit-properties', compact('property'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string',
+            'price' => 'required|numeric',
+            'location' => 'required|string|max:255',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $property = Property::find($id);
+        if (!$property) {
+            abort(404); // Or handle not found case as per your application's logic
+        }
+
+        $property->name = $request->name;
+        $property->description = $request->description;
+        $property->price = $request->price;
+        $property->location = $request->location;
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('property_images', 'public');
+            $property->image = $imagePath;
+        }
+
+        $property->save();
+
+        return redirect()->route('properties.index')->with('success', 'Property updated successfully.');
     }
 
     /**
