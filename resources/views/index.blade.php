@@ -279,9 +279,9 @@
           <!-- Single News -->
           <div class="single-news">
             <div class="image">
-              <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/1.jpg" alt="Blog" /></a>
+              <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/3.jpg" alt="Blog" /></a>
               <div class="meta-details">
-                <img class="thumb" src="assetshome/images/blog/b6.jpg" alt="Author" />
+                      <img src="assetshome/images/header/hero-image.jpg" alt="#" />
                 <span>BY Gladman Gee</span>
               </div>
             </div>
@@ -300,9 +300,9 @@
 
           <div class="single-news">
             <div class="image">
-              <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/2.jpg" alt="Blog" /></a>
+              <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/3.jpg" alt="Blog" /></a>
               <div class="meta-details">
-                <img class="thumb" src="assetshome/images/blog/b6.jpg" alt="Author" />
+                <img class="thumb" src="assetshome/images/blog/3.jpg" alt="Author" />
                 <span>BY Gladman Gee</span>
               </div>
             </div>
@@ -323,7 +323,7 @@
             <div class="image">
               <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/3.jpg" alt="Blog" /></a>
               <div class="meta-details">
-                <img class="thumb" src="assetshome/images/blog/b6.jpg" alt="Author" />
+                <img class="thumb" src="assetshome/images/blog/3.jpg" alt="Author" />
                 <span>BY Enock</span>
               </div>
             </div>
