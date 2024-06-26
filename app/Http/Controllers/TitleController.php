@@ -66,7 +66,7 @@ class TitleController extends Controller
 
     $title->save();
 
-    return redirect()->route('admin.title.title.data')->with('success', 'Title updated successfully.');
+    return redirect()->route('title.data')->with('success', 'Title updated successfully.');
 }
 
     public function destroy($id)

@@ -9,7 +9,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Worlds Best Admin UX Dashbaoard PRO version for bootstrap template, Select, Calandar, Report, Charts, Tables etc." name="description" />
     <meta content="" name="author" />
-    <link rel="shortcut icon" href="admin/assets/img/logoicon.png">
+    <link rel="shortcut icon" href="admin/admin/assets/img/logoicon.png">
 
     <!-- g fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
@@ -18,23 +18,23 @@
     <!-- Vendor or 3rd party style -->
 
     <!-- material icons -->
-    <link href="admin/assets/vendor/material-icons/material-icons.css" rel="stylesheet">
+    <link href="admin/admin/assets/vendor/material-icons/material-icons.css" rel="stylesheet">
     <!-- flags icons -->
-    <link href="admin/assets/vendor/flags/css/flag-icon.min.css" rel="stylesheet">
+    <link href="admin/admin/assets/vendor/flags/css/flag-icon.min.css" rel="stylesheet">
     <!-- daterange picker -->
-    <link href="admin/assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
+    <link href="admin/admin/assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
     <!-- vector map -->
-    <link href="admin/assets/vendor/jquery-toast-plugin-master/dist/jquery.toast.min.css" rel="stylesheet">
+    <link href="admin/admin/assets/vendor/jquery-toast-plugin-master/dist/jquery.toast.min.css" rel="stylesheet">
     <!-- Toast message -->
-    <link href="admin/assets/vendor/jquery-jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet">
+    <link href="admin/admin/assets/vendor/jquery-jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet">
     <!-- dataTables picker -->
-    <link href="admin/assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="admin/assets/vendor/DataTables-1.10.18/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="admin/admin/assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="admin/admin/assets/vendor/DataTables-1.10.18/css/responsive.dataTables.min.css" rel="stylesheet">
 
     <!-- Vendor or 3rd party style ends -->
 
     <!-- Customized template style mandatory -->
-    <link href="admin/assets/css/style-darkblue-dark.css" rel="stylesheet" id="stylelink">
+    <link href="admin/admin/assets/css/style-darkblue-dark.css" rel="stylesheet" id="stylelink">
     <!-- Customized template style ends -->
 </head>
 
@@ -85,7 +85,7 @@
                                             <div class="dropdown-menu dropdown-menu-center no-defaults pt-0 overflow-hidden" aria-labelledby="navbarDropdown2">
                                                 <div class="position-relative text-center rounded">
                                                     <div class="background">
-                                                        <img src="admin/assets/img/background-part.png" alt="">
+                                                        <img src="admin/admin/assets/img/background-part.png" alt="">
                                                     </div>
                                                     <div class="pt-4 pb-5 text-white">
                                                         <h5 class="font-weight-normal">Quick Access</h5>
@@ -145,7 +145,7 @@
                                             <div class="dropdown-menu dropdown-menu-sm-left dropdown-menu-center no-defaults pt-0 overflow-hidden" aria-labelledby="navbarDropdown5">
                                                 <div class="position-relative text-center rounded">
                                                     <div class="background">
-                                                        <img src="admin/assets/img/background-part.png" alt="">
+                                                        <img src="admin/admin/assets/img/background-part.png" alt="">
                                                     </div>
                                                     <div class="py-3 text-white">
                                                         <h5 class="font-weight-normal">Messages</h5>
@@ -289,7 +289,7 @@
                                         <li class="nav-item dropdown ml-0 ml-sm-4">
                                             <a class="nav-link dropdown-toggle profile-link" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <figure class="rounded avatar avatar-30">
-                                                    <img src="admin/assets/img/user1.png" alt="">
+                                                    <img src="admin/admin/assets/img/user1.png" alt="">
                                                 </figure>
                                                 <div class="username-text ml-2 mr-2 d-none d-lg-inline-block">
                                                     <h6 class="username"><span>Welcome,</span>Maxartkiller</h6>
@@ -301,11 +301,11 @@
                                             <div class="dropdown-menu dropdown-menu-right w-300 pt-0 overflow-hidden" aria-labelledby="navbarDropdown6">
                                                 <div class="position-relative text-center rounded py-5">
                                                     <div class="background">
-                                                        <img src="admin/assets/img/background-part.png" alt="">
+                                                        <img src="admin/admin/assets/img/background-part.png" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="text-center mb-3 top-60 z-2">
-                                                    <figure class="avatar avatar-120 mx-auto shadow"><img src="admin/assets/img/user1.png" alt=""></figure>
+                                                    <figure class="avatar avatar-120 mx-auto shadow"><img src="admin/admin/assets/img/user1.png" alt=""></figure>
                                                 </div>
                                                 <h5 class="text-center mb-0">Maxartkiller</h5>
                                                 <p class="text-center">UX Designer</p>
@@ -482,7 +482,7 @@
                                             <td>
                                                 <div class="media">
                                                     <figure class="mb-0 avatar avatar-40 mr-2">
-                                                        <img src="admin/assets/img/user3.png" alt="">
+                                                        <img src="admin/admin/assets/img/user3.png" alt="">
                                                     </figure>
                                                     <div class="media-body">
                                                         <p class="mb-0 template-inverse">John Alexandar</p>
@@ -497,7 +497,7 @@
                                             <td>
                                                 <div class="media">
                                                     <figure class="mb-0 avatar avatar-40 mr-2">
-                                                        <img src="admin/assets/img/user1.png" alt="">
+                                                        <img src="admin/admin/assets/img/user1.png" alt="">
                                                     </figure>
                                                     <div class="media-body">
                                                         <p class="mb-0 template-inverse">Sonya Wilson</p>
@@ -551,45 +551,45 @@
 
 @section('footerscript')
     <!-- Global js mandatory -->
-    <script src="admin/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="admin/assets/js/popper.min.js"></script>
-    <script src="admin/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="admin/admin/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="admin/admin/assets/js/popper.min.js"></script>
+    <script src="admin/admin/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Global js ends -->
 
     <!-- Vendor or 3rd party js -->
 
     <!-- date range picker -->
-    <script src="admin/assets/vendor/daterangepicker-master/moment.min.js"></script>
-    <script src="admin/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
+    <script src="admin/admin/assets/vendor/daterangepicker-master/moment.min.js"></script>
+    <script src="admin/admin/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
     <!-- Chart js -->
-    <script src="admin/assets/vendor/chartjs/Chart.min.js"></script>
-    <script src="admin/assets/vendor/chartjs/utils.js"></script>
+    <script src="admin/admin/assets/vendor/chartjs/Chart.min.js"></script>
+    <script src="admin/admin/assets/vendor/chartjs/utils.js"></script>
     <!-- Circular progress js  -->
-    <script src="admin/assets/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="admin/admin/assets/vendor/circle-progress/circle-progress.min.js"></script>
     <!-- Sparklines js  -->
-    <script src="admin/assets/vendor/sparklines/jquery.sparkline.min.js"></script>
+    <script src="admin/admin/assets/vendor/sparklines/jquery.sparkline.min.js"></script>
     <!-- DataTables js  -->
-    <script src="admin/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-    <script src="admin/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
-    <script src="admin/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script src="admin/admin/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="admin/admin/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
+    <script src="admin/admin/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
     <!-- vector maps js  -->
-    <script src="admin/assets/vendor/jquery-jvectormap/jquery-jvectormap.js"></script>
-    <script src="admin/assets/vendor/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="admin/admin/assets/vendor/jquery-jvectormap/jquery-jvectormap.js"></script>
+    <script src="admin/admin/assets/vendor/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <!-- vector maps js  -->
-    <script src="admin/assets/vendor/jquery-toast-plugin-master/dist/jquery.toast.min.js"></script>
+    <script src="admin/admin/assets/vendor/jquery-toast-plugin-master/dist/jquery.toast.min.js"></script>
     
     <!-- Vendor or 3rd party js ends -->
 
     <!-- Customized template js mandatory -->
-    <script src="admin/assets/js/main.js"></script>
+    <script src="admin/admin/assets/js/main.js"></script>
     <!-- Customized template js ends -->
 
     <!-- theme picker -->
-    <script src="admin/assets/js/style-picker.js"></script>
+    <script src="admin/admin/assets/js/style-picker.js"></script>
     <!-- theme picker ends -->
 
     <!-- Customized page level js -->
-    <script src="admin/assets/js/production-dashboard.js"></script>
+    <script src="admin/admin/assets/js/production-dashboard.js"></script>
     <script>
     </script>
     <!-- Customized page level js ends -->
