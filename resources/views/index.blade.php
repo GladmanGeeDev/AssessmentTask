@@ -108,152 +108,7 @@
       </div>
     </div>
   </section>
-  <!-- End header Area -->
-
-  <!--====== ABOUT FIVE PART START ======-->
-
-  {{-- <section class="about-area about-five">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-12">
-          <div class="about-image-five">
-            <svg class="shape" width="106" height="134" viewBox="0 0 106 134" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="1.66654" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="1.66654" cy="132" r="1.66667" fill="#DADADA" />
-              <circle cx="16.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="16.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="16.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="16.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="16.333" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="16.333" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="16.333" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="16.333" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="16.333" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="16.333" cy="132" r="1.66667" fill="#DADADA" />
-              <circle cx="30.9998" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="30.9998" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="30.9998" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="30.9998" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="31" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6668" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="31" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6668" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="31" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6668" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="31" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6668" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="31" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6668" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="31" cy="132" r="1.66667" fill="#DADADA" />
-              <circle cx="74.6668" cy="132" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="45.6665" cy="132" r="1.66667" fill="#DADADA" />
-              <circle cx="89.3333" cy="132" r="1.66667" fill="#DADADA" />
-              <circle cx="60.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="1.66679" r="1.66667" fill="#DADADA" />
-              <circle cx="60.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="16.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="60.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="31.0001" r="1.66667" fill="#DADADA" />
-              <circle cx="60.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="45.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="60.333" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="60.3335" r="1.66667" fill="#DADADA" />
-              <circle cx="60.333" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="88.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="60.333" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="117.667" r="1.66667" fill="#DADADA" />
-              <circle cx="60.333" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="74.6668" r="1.66667" fill="#DADADA" />
-              <circle cx="60.333" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="103" r="1.66667" fill="#DADADA" />
-              <circle cx="60.333" cy="132" r="1.66667" fill="#DADADA" />
-              <circle cx="104" cy="132" r="1.66667" fill="#DADADA" />
-            </svg>
-            <img src="assets/images/about/about-img1.jpg" alt="about" />
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="about-five-content">
-            <h6 class="small-title text-lg">OUR STORY</h6>
-            <h2 class="main-title fw-bold">Our team comes with the experience and knowledge</h2>
-            <div class="about-five-tab">
-              <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
-                    type="button" role="tab" aria-controls="nav-who" aria-selected="true">Who We Are</button>
-                  <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
-                    type="button" role="tab" aria-controls="nav-vision" aria-selected="false">our Vision</button>
-                  <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
-                    type="button" role="tab" aria-controls="nav-history" aria-selected="false">our History</button>
-                </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, look like readable English.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
-                    form,
-                    by injected humour.</p>
-                </div>
-                <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, look like readable English.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
-                    form,
-                    by injected humour.</p>
-                </div>
-                <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, look like readable English.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
-                    form,
-                    by injected humour.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- container -->
-  </section> --}}
+  
 
   <section class="slider mt-4">
     <div class="container-fluid">
@@ -282,11 +137,8 @@
 </section>
 
 
-  <!--====== ABOUT FIVE PART ENDS ======-->
-
-  <!-- ===== service-area start ===== -->
   <section id="services" class="services-area services-eight">
-    <!--======  Start Section Title Five ======-->
+
     <div class="section-title-five">
       <div class="container">
         <div class="row">
@@ -297,11 +149,11 @@
             </div>
           </div>
         </div>
-        <!-- row -->
+
       </div>
-      <!-- container -->
+
     </div>
-    <!--======  End Section Title Five ======-->
+
     <div class="container">
       <div class="row">
 
@@ -384,19 +236,15 @@
       </div>
     </div>
   </section>
-  <!--/ End Pricing  Area -->
 
-
-
-  <!-- Start Cta Area -->
   <section id="call-action" class="call-action">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
           <div class="inner-content">
-            <h2>Assessment Tasks</h2>
+            <h2> Property Book</h2>
             <p>
-              Text Text.
+              Task 1
             </p>
             <div class="light-rounded-buttons">
               <a href="javascript:void(0)" class="btn primary-btn-outline">Get Started</a>
@@ -407,11 +255,98 @@
     </div>
   </section>
 
-  
+  <div id="blog" class="latest-news-area section">
+
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Team</h6>
+              <h2 class="fw-bold">Team Members</h2>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/1.jpg" alt="Blog" /></a>
+              <div class="meta-details">
+                <img class="thumb" src="assetshome/images/blog/b6.jpg" alt="Author" />
+                <span>BY Gladman Gee</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)"> ta </a>
+              </h4>
+              <p>
+                Random Text
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/2.jpg" alt="Blog" /></a>
+              <div class="meta-details">
+                <img class="thumb" src="assetshome/images/blog/b6.jpg" alt="Author" />
+                <span>BY Gladman Gee</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  
+                </a>
+              </h4>
+             
+            </div>
+          </div>
+ 
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+      
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assetshome/images/blog/3.jpg" alt="Blog" /></a>
+              <div class="meta-details">
+                <img class="thumb" src="assetshome/images/blog/b6.jpg" alt="Author" />
+                <span>BY Enock</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+            
+                </a>
+              </h4>
+              <p>
+                
+              </p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <footer class="footer-area footer-eleven">
-    <!-- Start Footer Top -->
+
     <div class="footer-top">
       <div class="container">
         <div class="inner-content">
@@ -421,38 +356,28 @@
               <div class="footer-widget f-about">
              
                 <p>
-                  Making the world a better place through constructing elegant
-                  hierarchies.
+                  Laravel is the Best
                 </p>
                
               </div>
-              <!-- End Single Widget -->
+     
             </div>
             <div class="col-lg-2 col-md-6 col-12">
-              <!-- Single Widget -->
-              <div class="footer-widget f-link">
-                <h5>Solutions</h5>
-                <ul>
-                  <li><a href="javascript:void(0)">Marketing</a></li>
-                  <li><a href="javascript:void(0)">Analytics</a></li>
-                  <li><a href="javascript:void(0)">Commerce</a></li>
-                  <li><a href="javascript:void(0)">Insights</a></li>
-                </ul>
-              </div>
-              <!-- End Single Widget -->
+  
+           
             </div>
             <div class="col-lg-2 col-md-6 col-12">
-              <!-- Single Widget -->
+           
               <div class="footer-widget f-link">
-                <h5>Support</h5>
+                <h5>Property Book</h5>
                 <ul>
-                  <li><a href="javascript:void(0)">Pricing</a></li>
-                  <li><a href="javascript:void(0)">Pricing</a></li>
-                  <li><a href="javascript:void(0)">Pricing</a></li>
-                  <li><a href="javascript:void(0)">Pricng</a></li>
+                  <li><a href="javascript:void(0)">Home</a></li>
+                  <li><a href="javascript:void(0)">Address</a></li>
+                  <li><a href="javascript:void(0)">Team</a></li>
+                  <li><a href="javascript:void(0)">Net Worth</a></li>
                 </ul>
               </div>
-              <!-- End Single Widget -->
+       
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <!-- Single Widget -->
@@ -468,15 +393,15 @@
                   </div>
                 </form>
               </div>
-              <!-- End Single Widget -->
+         
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--/ End Footer Top -->
+
   </footer>
-  <!--/ End Footer Area -->
+
 
 
 	<script src="assets2/plugins/jquery/jquery.js"></script>

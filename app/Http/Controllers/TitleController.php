@@ -21,7 +21,7 @@ class TitleController extends Controller
 
     public function create()
     {
-        return view('admin.titles.create-title');
+        return view('admin.titlecrud.create-title');
     }
 
     public function store(Request $request)
@@ -40,7 +40,7 @@ class TitleController extends Controller
     public function edit($id)
     {
         $title = Title::findOrFail($id);
-        return view('admin.titles.edit-title', compact('title'));
+        return view('admin.titlecrud.edit-title', compact('title'));
     }
 
     public function update(Request $request, $id)

@@ -379,36 +379,63 @@
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 mx-auto">
-                                    <div class="row">
+                                    <div class="row ">
                                         <div class="col-lg-12 col-md-12 text-center">
-                                            <h1 class="mt-4">Edit Title</h1>
+                                        
+                                            <h1 class="mt-4">Edit Property</h1>
+                                          
                                         </div>
                                     </div>
                                     <br>
-                                    <form action="{{ route('titles.update', $title->id) }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('admin.update', $property->id) }}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         @method('PUT')
-        
+                                    
                                         <div class="form-group row mt-4">
                                             <div class="col-lg-6 col-md-6">
-                                                <label>Title</label>
-                                                <input type="text" name="title" class="form-control" value="{{ old('title', $title->title) }}" required>
+                                                <label>Property Name</label>
+                                                <input type="text" name="name" class="form-control" value="{{ old('name', $property->name) }}" required>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Location</label>
+                                                <input type="text" name="location" class="form-control" value="{{ old('location', $property->location) }}" required>
                                             </div>
                                         </div>
-        
+                                        <div class="form-group row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Price</label>
+                                                <input type="text" name="price" class="form-control" value="{{ old('price', $property->price) }}" required>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Description</label>
+                                                <input type="text" name="description" class="form-control" value="{{ old('description', $property->description) }}" required>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label>Attachments</label>
+                                                <br>
+                                                <input type="file" name="image" class="form-control">
+                                            </div>
+                                        </div>
+                                    
                                         <div class="card-footer">
-                                            <a href="{{ route('titles.index') }}" class="btn btn-outline-primary">Cancel</a>
+                                            <button type="button" class="btn btn-outline-primary">Cancel</button>
                                             <button type="submit" class="btn btn-primary float-right">DONE</button>
                                         </div>
                                     </form>
+                                    
+                                 
+                
                                 </div>
                             </div>
                         </div>
+                   
                     </div>
                 </div>
             </div>
         </div>
-        
         <!-- Main container ends -->
 
     </div>
