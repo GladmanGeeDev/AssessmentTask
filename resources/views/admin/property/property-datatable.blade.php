@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>AdminUX-PRO | Admin Dashboard HTML Template</title>
+    <title>Assessment Task @ PropertyBook</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Worlds Best Admin UX Dashbaoard PRO version for bootstrap template, Select, Calandar, Report, Charts, Tables etc." name="description" />

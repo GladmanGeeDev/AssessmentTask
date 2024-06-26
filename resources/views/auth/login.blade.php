@@ -113,21 +113,9 @@ License: You must have a valid license purchased only from maxartkiller.com in o
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md text-center text-md-left align-self-center">
-                        <p>All rights reserved by <a href="">Maxartkiller</a></p>
+                        <p>Assessment Task done by <a href="">Gladman Nyamugoneka</a></p>
                     </div>
-                    <div class="col-12 col-md-auto text-center text-md-right">
-                        <ul class="nav justify-content-center justify-md-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Terms of use</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Privacy Policy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactus.html">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
+            
                 </div>
             </div>
         </footer>
