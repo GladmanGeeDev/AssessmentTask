@@ -98,17 +98,27 @@ return [
             'throttle' => 60,
         ],
     ],
+    
+    'guards' => [
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'users',
+    ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Password Confirmation Timeout
-    |--------------------------------------------------------------------------
-    |
-    | Here you may define the amount of seconds before a password confirmation
-    | window expires and users are asked to re-enter their password via the
-    | confirmation screen. By default, the timeout lasts for three hours.
-    |
-    */
+    'api' => [
+        'driver' => 'token',
+        'provider' => 'users',
+        'hash' => false,
+    ],
+
+    'user' => [
+        'driver' => 'session',
+        'provider' => 'users', // or your custom provider
+    ],
+],
+
+
+   
 
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
 

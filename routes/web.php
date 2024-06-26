@@ -12,6 +12,9 @@ Route::get('/', [App\Http\Controllers\PropertyController::class, 'index']);
 
 Route::get('admin/dashboard', [AdminController::class, 'index'])->name('dashboard');
 
+Route::get('admin/login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('admin.login');
+Route::post('admin/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
+
 
 
 Route::get('admin/display-properties', [AdminController::class, 'displayProperties'])->name('display.properties');
@@ -33,3 +36,7 @@ Route::post('admin/titles/{id}', [TitleController::class, 'update'])->name('titl
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
